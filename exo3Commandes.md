@@ -37,3 +37,14 @@ nano index.html
 ```
 
 ## Partie 3
+
+```bash
+docker run -d -p 8084:80 -v C:\Users\lucas\Documents\ynov\m2\devavecdocker\code\html5sup-editorial:/usr/share/nginx/html --name nginx-web3 nginx
+docker run -d -p 8085:80 -v C:\Users\lucas\Documents\ynov\m2\devavecdocker\code\html5sup-massively:/usr/share/nginx/html --name nginx-web4 nginx
+docker run -d -p 8086:80 -v C:\Users\lucas\Documents\ynov\m2\devavecdocker\code\html5sup-paradigm:/usr/share/nginx/html --name nginx-web5 nginx
+docker ps
+docker stop nginx-web3
+docker stop nginx-web4
+docker stop nginx-web5
+docker ps -a
+```
